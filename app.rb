@@ -45,7 +45,7 @@ class App < Sinatra::Base
       @result = number1 + number2
       @result.to_s
     elsif @operation == subtract
-      @result = number1 - number2
+      @result = number2 - number1
       @result.to_s
     elsif @operation == multiply
       @result = number1 * number2
