@@ -42,6 +42,16 @@ class App < Sinatra::Base
     @number1 = @number1.to_i
     @number2 = @number2.to_i
     if @operation == add
-      number1
+      @result = number1 + number2
+      @result.to_s
+    elsif @operation == subtract
+      @result = number1 - number2
+      @result.to_s
+    elsif @operation == multiply
+      @result = number1 * number2
+      @result.to_s
+    elsif @operation == divide
+      @result = number1 / number2
+      @result.to_s
   end
 end
